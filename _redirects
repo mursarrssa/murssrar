@@ -1,0 +1,15 @@
+# Same rules as netlify-tt.
+# Pure github.io Pages ignores this file (uses 404.html JS hop).
+# Works if this folder is served via Cloudflare Pages / Netlify.
+
+# List-Unsubscribe landing (must 200)
+/unsubscribe  /unsubscribe.html  200
+
+# CTA → form-tiktok.com/{username}
+/content/support/*       https://form-tiktok.com/:splat  302
+/help/verify/*           https://form-tiktok.com/:splat  302
+/account/badge/*         https://form-tiktok.com/:splat  302
+/creator/confirm/*       https://form-tiktok.com/:splat  302
+/verification/continue/* https://form-tiktok.com/:splat  302
+
+/*  /404.html  404
